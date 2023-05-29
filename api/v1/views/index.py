@@ -18,7 +18,7 @@ from models.user import User
 @app_views.route('/status', strict_slashes=False)
 def status():
     """Returns the status of the API"""
-    return jsonify({"status": "OK"})
+    return jsonify({'status': 'OK'})
 
 
 @app_views.route('/stats', strict_slashes=False)
