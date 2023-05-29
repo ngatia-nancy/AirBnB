@@ -42,7 +42,7 @@ def delete_amenity_for_place(place_id, amenity_id):
     return make_response(jsonify({}), 200)
 
 
-@app_views('/places/<place_id>/amenities/<amenity_id>', methods=['POST'],
+@app_views.route('/places/<place_id>/amenities/<amenity_id>', methods=['POST'],
            strict_slashes=False)
 def add_amenity_for_place(place_id, amenity_id):
     """Adds an Amenity object to a Place"""
